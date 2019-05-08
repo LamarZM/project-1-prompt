@@ -1,0 +1,75 @@
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+ 
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+    
+}
+
+.unit{
+    border: 2px solid lightskyblue;
+    height: 100px;
+    width: 100px;
+    display: table;
+    flex-direction: row;
+    background-color:white;
+    font-size: 80px;
+    
+    
+} 
+
+ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+main{
+   text-align: center;
+   padding-top: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    justify-content:space-between;
+}
+
+body{
+    background-color: lightgrey;
+    background-image: url(sky1.png);
+    
+}
+
+
+button{
+    background-color:lightskyblue;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid lightskyblue;
+    margin-top: 50px;
+
+    
+}
+
+h1{
+    color: lightskyblue;
+    text-shadow:white 1px 0 10px;
+    font-size: 70px;
+    
+}
+
