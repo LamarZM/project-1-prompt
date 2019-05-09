@@ -18,9 +18,11 @@ function unitClick(unit){
     //when the count equal to even number add text 'x'x
     if(count %2 === 0){
         $(unit.target).text("X");
+        $(unit.target).css("color", "indigo")
 }
     else{
         $(unit.target).text("O");
+        $(unit.target).css("color", "yellow")
     }
     let index = $(unit.target).attr("id");
     let text= $(unit.target).text();
@@ -38,6 +40,25 @@ function unitClick(unit){
 }
 
 $(".unit").on("click", unitClick);
+
+$('#access').on("click", function(){
+    count = 1;
+   $(".unit").text("");
+   $(".unit").off("click");
+   $(".unit").on("click",unitClick );
+   console.log("access is running!!s")
+   game= [
+    "","","", // 0,1,2
+    "","","", // 3,4,5
+    "","","" // 6,7,8
+]
+});
+
+// $('.unit').on("click", game);
+
+// Add event to all box
+
+
 
 //function a(name,lName){
     //console.log("Weclome " + name + " " + lName);}
@@ -60,6 +81,8 @@ let winnerPath= [
     [0,4,8],
     [2,4,6]
 ]
+
+
 
 
 //a function that detects the winner
@@ -100,7 +123,13 @@ function WinnerDetection(){
     
 
          if(win === true){
-            alert("WINNERRRR " + v);
+            swal({
+                title: "Good job! " + v,
+                text: "Congratulations",
+                icon: "success",
+                button: "Done!",
+              });
+           
             win = false;
         }
     });

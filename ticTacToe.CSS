@@ -13,16 +13,15 @@ header{
 }
 
 .unit{
-    border: 2px solid lightskyblue;
+    border: 2px solid orange;
     height: 100px;
     width: 100px;
     display: table;
     flex-direction: row;
-    background-color:white;
+    background-color:#D3EBEA;
     font-size: 80px;
+}
     
-    
-} 
 
 ul{
     display: flex;
@@ -44,32 +43,57 @@ footer{
     justify-content:space-between;
 }
 
-body{
-    background-color: lightgrey;
-    background-image: url(sky1.png);
+#body{
+    background-color:#D3EBEA;
+  
     
 }
 
 
 button{
-    background-color:lightskyblue;
+    background-color: #D3EBEA;
     margin-left: 300px;
     margin-bottom: 30px;
-    color:white;
+    color:orange;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
     font-size: 20px;
-    border: 2px solid lightskyblue;
+    border: 2px solid orange;
     margin-top: 50px;
 
     
 }
 
 h1{
-    color: lightskyblue;
+    color: orange;
     text-shadow:white 1px 0 10px;
     font-size: 70px;
     
 }
+
+#gif{
+    background-color: #D3EBEA;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sky{
+    background-color:#D3EBEA;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    color:orange;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid orange;
+    margin-top: 50px;
+    
+    
+
+}
+
 
